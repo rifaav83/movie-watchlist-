@@ -67,7 +67,7 @@ searchbtn.addEventListener("click", function() {
         btn.textContent = "Add to Watchlist";
 
         
-        btn.addEventListener("click", function () {
+        btn.addEventListener("click", function() {
           let watchlist =
             JSON.parse(localStorage.getItem("watchlist")) || [];
 
@@ -128,7 +128,7 @@ watchbtn.addEventListener("click", function () {
 
   
     const removeBtn = movieresults.lastElementChild.querySelector(".remove-watchlist-btn");
-    removeBtn.addEventListener("click", function () {
+    removeBtn.addEventListener("click", function() {
       
       watchlist = watchlist.filter(m => m.imdbID !== movie.imdbID);
       localStorage.setItem("watchlist", JSON.stringify(watchlist));
