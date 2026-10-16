@@ -11,7 +11,7 @@ input.addEventListener("input", function () {
 });
 
 
-searchbtn.addEventListener("click", function () {
+searchbtn.addEventListener("click", function() {
   movieresults.innerHTML = "";
 
   const value = input.value.trim();
